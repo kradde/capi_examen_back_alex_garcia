@@ -15,4 +15,9 @@ class UserDomicilio extends Model
      * @var string
      */
     protected $table = 'user_domicilio';
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
